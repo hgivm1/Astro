@@ -1,8 +1,6 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from 'astro/config'
 
-// https://astro.build/config
 export default defineConfig({
-    site: 'https://astronaut.github.io',
-    base: '/prax',
-});
+  site: 'https://hgivm1.github.io',
+  base: '/hgivm1.github.io',
+})
