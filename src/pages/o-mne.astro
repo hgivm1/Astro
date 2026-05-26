@@ -15,11 +15,20 @@
 			@keyframes slideInUp {
 				from {
 					opacity: 0;
-					transform: translateY(20px);
+					transform: translateY(-20px);
 				}
 				to {
 					opacity: 1;
 					transform: translateY(0);
+				}
+			}
+
+			@keyframes zoomIn {
+				from {
+					transform: scale(1);
+				}
+				to {
+					transform: scale(1.05);
 				}
 			}
 
@@ -52,6 +61,12 @@
 				border-bottom: 3px solid #d4a574;
 				padding-bottom: 12px;
 				animation: slideInUp 0.8s ease-out 0.1s both;
+				transition: transform 0.3s ease-out;
+				cursor: pointer;
+			}
+
+			h1:hover {
+				transform: scale(1.05);
 			}
 
 			h2 {
@@ -59,6 +74,12 @@
 				border-left: 4px solid #d4a574;
 				padding-left: 12px;
 				animation: slideInUp 0.8s ease-out 0.2s both;
+				transition: transform 0.3s ease-out;
+				cursor: pointer;
+			}
+
+			h2:hover {
+				transform: scale(1.05);
 			}
 
 			p {
@@ -77,9 +98,12 @@
 				color: #a67c52;
 				text-decoration: none;
 				font-weight: 500;
+				transition: transform 0.3s ease-out;
+				display: inline-block;
 			}
 
 			a:hover {
+				transform: scale(1.05);
 				color: #8b6639;
 				text-decoration: underline;
 			}
@@ -87,9 +111,8 @@
 	</head>
 	<body>
 		<div class="page">
-			<h1>O mne</h1>
-			<p>volam sa daniel, som druhak na spse kosice, a na programovani ma bavy to ze mozem s malou zmenou ebz velkej namahy zmenit celly vysledny produkt</p>
-			
+			<h1>Hi, I'm Daniel!</h1>
+
 			<h2>About Me</h2>
 			<p>I'm a passionate developer interested in creating elegant solutions to complex problems. My journey in tech has taught me that clean code and thoughtful design are just as important as functionality.</p>
 			
